@@ -1,0 +1,79 @@
+.header {
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    z-index: 1000;
+
+}
+.logo {
+    cursor: pointer;
+}
+.leftheader {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between title and icons */
+}
+
+.leftheader h1 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 20px; /* Adjust icon size as needed */
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.rightheader {
+    margin-left: auto; /* Pushes the user icon to the right */
+}
+
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    background-color: #2d3748;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: #4a5568;
+}
+
+.sign-out-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

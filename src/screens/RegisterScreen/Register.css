@@ -1,0 +1,162 @@
+.register {
+    margin: 20px 20%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+.registerheader {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.username,
+.emailclass,
+.confirmemailclass,
+.password,
+.confirmpassword {
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    color: white;
+    margin-top: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.invalid {
+    color: #ef4444;
+    margin-left: 8px;
+}
+
+.valid {
+    color: #22c55e;
+    margin-left: 8px;
+}
+
+.offscreen {
+    display: none;
+}
+
+.instructions {
+    font-size: 0.875rem;
+    border-radius: 4px;
+    background: #000000;
+    color: #ffffff;
+    padding: 12px;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.instructions svg {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #2563eb;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.line {
+    display: inline-block;
+    color: #3b82f6;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+.line:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.errMsg {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+section {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Success message styling */
+section h1 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+section a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .register {
+        margin: 20px 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .register {
+        margin: 20px 5%;
+    }
+}

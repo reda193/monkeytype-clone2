@@ -1,0 +1,184 @@
+.typingScreen {
+    padding-top: 200px;
+    line-height: 35px;
+    min-height: 175px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    padding: 0 20px;
+}
+
+
+.typingScreen:focus {
+    outline: none;
+}
+
+.wordsContainer {
+    max-width: 1500px;
+    margin: 0 auto;
+    filter: blur(5px);
+    text-align: center;
+}
+
+.typingScreen:focus .wordsContainer {
+    filter: blur(0);
+}
+
+.seconds {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.timeValue {
+    color: white;
+    font-weight: 500;
+}
+
+.timeLabel {
+    color: rgba(255, 255, 255, 0.7); /* Makes the "Time:" label slightly dimmer */
+    margin-left: 8px;
+}
+
+.wordCount {
+    padding-right: 8px;
+    border-right: 2px solid rgba(255, 255, 255, 0.3); /* Adds a subtle separator */
+}
+
+.wordsProgress {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Adds consistent spacing between elements */
+    color: white;
+}
+
+.refreshButton {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.refreshButton:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.word {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    transition: filter 0.3s ease;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+.focusError {
+    padding-top: 265px;
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.typingScreen:focus .focusError {
+    display: none;
+}
+
+.typingScreen:focus .cursor {
+    display: block;
+}
+
+.cursor {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #e21616;
+    transition: left 0.2s ease, top 0.1s ease; 
+    animation: blink 1s infinite;
+    display: none;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.word.active-word {
+    text-decoration: underline;
+}
+
+.letter.active-letter {
+    font-weight: bold;
+}
+
+.space {
+    display: inline-block;
+    width: 0.3em;
+}
+
+.correct-letter {
+    color: green;
+}
+
+.incorrect-letter {
+    color: red;
+}
+
+.default {
+    color: white;
+}
+.gameStats {
+    color: white;
+    text-align: center;
+  }
+  
+  .gameStats h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .gameStats ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .gameStats li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:white;     
+  }
+  
+  .gameInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
